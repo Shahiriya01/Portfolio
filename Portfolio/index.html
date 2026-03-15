@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Shahi | AI & ML Developer</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Interactive Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar relative-z">
+        <div class="nav-content">
+            <a href="#" class="logo">RIYA<span class="text-primary">.SH</span></a>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#achievements" class="nav-item">Achievements</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative-z container">
+
+        <!-- Hero Section -->
+        <section id="about" class="hero fade-in">
+            <div class="hero-content">
+                <span class="greeting"><i class="fas fa-terminal"></i> Hi, I'm Riya</span>
+                <h1 class="hero-title">AI & Machine Learning <br><span class="text-gradient">Developer</span></h1>
+                <p class="hero-subtitle">Building intelligent solutions through code and creativity.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#skills" class="btn btn-secondary">View Skills <i class="fas fa-code"></i></a>
+                    <a href="Riya_Shahi.pdf" target="_blank" class="btn btn-outline" download="Riya Shahi Resume.pdf">Resume <i
+                            class="fas fa-file-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="interactive-cube-container">
+                    <div class="cube">
+                        <div class="cube-face front"><i class="fas fa-brain"></i></div>
+                        <div class="cube-face back"><i class="fas fa-code"></i></div>
+                        <div class="cube-face right"><i class="fas fa-database"></i></div>
+                        <div class="cube-face left"><i class="fas fa-network-wired"></i></div>
+                        <div class="cube-face top"><i class="fas fa-cogs"></i></div>
+                        <div class="cube-face bottom"><i class="fas fa-robot"></i></div>
+                    </div>
+                    <div class="glow-orb"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding fade-in">
+            <h2 class="section-title relative-z"><span class="text-secondary">&lt;</span> Tech Arsenal <span
+                    class="text-secondary">/&gt;</span></h2>
+
+            <div class="spider-web-container relative-z" id="spider-web">
+                <!-- Canvas for drawing the web connections -->
+                <canvas id="skills-canvas"></canvas>
+                
+                <!-- Center Node -->
+                <div class="skill-node center-node" data-id="center">Riya.SH</div>
+
+                <!-- Category Nodes -->
+                <div class="skill-node category-node" data-id="cat-prog">Programming</div>
+                <div class="skill-node category-node" data-id="cat-ml">Machine Learning</div>
+                <div class="skill-node category-node" data-id="cat-lib">Libraries</div>
+                <div class="skill-node category-node" data-id="cat-tools">Tools</div>
+
+                <!-- Skill Nodes : Programming -->
+                <div class="skill-node sub-node" data-parent="cat-prog" data-id="prog-1">Python</div>
+                <div class="skill-node sub-node" data-parent="cat-prog" data-id="prog-2">Java</div>
+                <div class="skill-node sub-node" data-parent="cat-prog" data-id="prog-3">SQL</div>
+                <div class="skill-node sub-node" data-parent="cat-prog" data-id="prog-4">C</div>
+                <div class="skill-node sub-node" data-parent="cat-prog" data-id="prog-5">JavaScript</div>
+
+                <!-- Skill Nodes : ML -->
+                <div class="skill-node sub-node" data-parent="cat-ml" data-id="ml-1">Data Analysis</div>
+                <div class="skill-node sub-node" data-parent="cat-ml" data-id="ml-2">Computer Vision</div>
+                <div class="skill-node sub-node" data-parent="cat-ml" data-id="ml-3">Deep Learning</div>
+
+                <!-- Skill Nodes : Libraries -->
+                <div class="skill-node sub-node" data-parent="cat-lib" data-id="lib-1">Pandas</div>
+                <div class="skill-node sub-node" data-parent="cat-lib" data-id="lib-2">NumPy</div>
+                <div class="skill-node sub-node" data-parent="cat-lib" data-id="lib-3">Scikit-learn</div>
+                <div class="skill-node sub-node" data-parent="cat-lib" data-id="lib-4">Matplotlib</div>
+
+                <!-- Skill Nodes : Tools -->
+                <div class="skill-node sub-node" data-parent="cat-tools" data-id="tools-1">Power BI</div>
+                <div class="skill-node sub-node" data-parent="cat-tools" data-id="tools-2">MySQL</div>
+                <div class="skill-node sub-node" data-parent="cat-tools" data-id="tools-3">Figma</div>
+                <div class="skill-node sub-node" data-parent="cat-tools" data-id="tools-4">VS Code</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding fade-in">
+            <h2 class="section-title"><span class="text-primary">01.</span> Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder text-primary fa-2x"></i>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3 class="project-title">HastaGuru</h3>
+                    <p class="project-desc">AI-based Bharatanatyam mudra recognition platform offering real-time
+                        feedback using computer vision.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder text-secondary fa-2x"></i>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3 class="project-title">Rural AI Healthcare Assistant</h3>
+                    <p class="project-desc">Accessible healthcare diagnostic tool for rural communities leveraging
+                        machine learning for preliminary symptom analysis.</p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder text-primary fa-2x"></i>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3 class="project-title">Waste Classification</h3>
+                    <p class="project-desc">Deep learning model designed to accurately classify waste into distinct
+                        categories to promote automated recycling.</p>
+                    <div class="project-tags">
+                        <span>Deep Learning</span>
+                        <span>TensorFlow</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder text-secondary fa-2x"></i>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3 class="project-title">AI-Driven Recruitment System</h3>
+                    <p class="project-desc">Intelligent system to filter and highlight candidates automatically using
+                        NLP and advanced ranking algorithms.</p>
+                    <div class="project-tags">
+                        <span>NLP</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder text-primary fa-2x"></i>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3 class="project-title">Power BI Data Analytics</h3>
+                    <p class="project-desc">Interactive dashboard presenting comprehensive business insights and data
+                        visualization for decision-making.</p>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding fade-in">
+            <h2 class="section-title"><span class="text-secondary">#</span> Achievements</h2>
+            <div class="terminal-ui glass-card">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="term-title">riya@portfolio:~/achievements</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="cmd"><span>$</span> cat achievements.log</p>
+                    <ul class="terminal-list">
+                        <li><span class="text-primary">></span> Finalist at Smart India Hackathon - Built an innovative
+                            solution under high pressure.</li>
+                        <li><br></li>
+                        <li><span class="text-primary">></span> AI/ML Internship at IBM SkillsBuild - Completed rigorous
+                            coursework and hands-on projects in Machine Learning.</li>
+                        <li><br></li>
+                        <li><span class="text-primary">></span> Event Coordinator at GDG SVIT Cloud Expert - Organized
+                            tech workshops and managed large-scale community events.</li>
+                        <li><br></li>
+                        <li><span class="text-primary">></span> Active Contributor to Open Source Projects - Regularly
+                            pushing code and exploring new technologies on GitHub.</li>
+                        <li><br></li>
+                        <li><span class="text-primary">></span> Designed Multiple AI Models - Successfully deployed
+                            models for healthcare, recruitment, and waste management.</li>
+                    </ul>
+                    <p class="cmd cursor-blink"><span>$</span> _</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Contact Flex Layout -->
+        <div class="bottom-sections fade-in">
+
+            <!-- Education Section -->
+            <section id="education" class="education-section section-padding">
+                <h2 class="section-title">Education</h2>
+                <div class="edu-card glass-card hover-glow">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap fa-2x text-secondary"></i></div>
+                    <div class="edu-details">
+                        <h3 class="degree">Bachelor of Technology in Computer Science and Design</h3>
+                        <p class="university">Sardar Vallabhbhai Patel Institute of Technology, Vasad</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section section-padding">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-card glass-card">
+                    <p class="contact-msg">Currently looking for new opportunities. My inbox is always open. Whether you
+                        have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="social-links">
+                        <a href="mailto:riyashahi079@gmail.com" class="social-icon" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/riya-shahi-762815289" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Shahiriya01" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="mailto:riyashahi079@gmail.com" class="btn btn-primary mt-4">Say Hello</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer relative-z">
+        <p>Designed & Built by Riya Shahi &copy; 2026</p>
+        <p class="footer-subtext">Initializing AI sequence... <span class="text-primary">System Secure.</span></p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
